@@ -83,6 +83,7 @@ img {
 
 .menu-item {
     margin: 6px 40px 0 0;
+    display: block;
 }
 
 .menu-item:last-child {
@@ -173,11 +174,11 @@ img {
 
 .information {
     background-color: #222222;
-    height: 676px;
     position: relative;
     background-image: url(../photo/map-image.png);
     background-repeat: no-repeat;
     background-position: right 90%;
+    padding-bottom: 116px;
 }
 
 /* .information::before {
@@ -214,7 +215,7 @@ img {
 .contacts-information {
     font-family: "Montserrat";
     font-weight: 700;
-    padding: 5px;
+    padding: 20px;
     width: 456px;
     height: 52px;
     margin-right: 30px;
@@ -230,7 +231,7 @@ img {
     font-weight: 700;
     width: 454px;
     height: 212px;
-    padding: 5px;
+    padding: 20px;
     border: 0;
     border-radius: 2px;
 }
@@ -246,4 +247,13 @@ img {
     border: 0;
     border-radius: 3px;
     display: block;
+}
+
+.contacts {
+    display: flex;
+}
+
+.contacts-area {
+    width: 456px;
+    margin-right: 30px;
 }
