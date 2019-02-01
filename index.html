@@ -15,21 +15,21 @@
   </head>
   <body>
     <header class="wrapper header-bottom">
-      <div class="menu">
-        <p class="logo">Golden</p>
-        <ul>
+      <nav class="menu">
+        <a class="logo" href="#">Golden</a>
+        <ul class="menu-button">
           <li class="menu-item"><a href="#" class="menu-link">home</a></li>
           <li class="menu-item"><a href="#" class="menu-link">services</a></li>
           <li class="menu-item"><a href="#" class="menu-link">portfolio</a></li>
           <li class="menu-item"><a href="#" class="menu-link">about</a></li>
           <li class="menu-item"><a href="#" class="menu-link">contact</a></li>
         </ul>
-      </div>
+      </nav>
     </header>
-    <main class="wrapper">
-      <h3 class="headline">services</h3>
+    <main>
+      <section class="wrapper">
+      <h2 class="headline">services</h2>
       <p class="signature">Proin iaculis purus consequat sem cure.</p>
-      <article class="size">
         <ul class="service-flex">
           <li class="service icon-bag">
             <h4 class="service-name">E-Commerce</h4>
@@ -56,23 +56,22 @@
             </p>
           </li>
         </ul>
-      </article>
-    </main>
-    <footer>
-      <article class="information">
-      <img class="world" src="./photo/map-image.png" alt="world map">
+      </section>
+      <section class="information">
+      <h3 class="contacts-title">contuct us</h3>
+      <p class="contacts-signature">Proin iaculis purus consequat sem cure.</p>
       <form class="contacts-form">
-        <section class="contacts-size">
-          <h3 class="contacts-title">contuct us</h3>
-          <p class="contacts-signature">Proin iaculis purus consequat sem cure.</p>
-          <input class="contacts-information" type="text" placeholder="your name *">
-          <input class="contacts-information" type="email" placeholder="yore e-mail *">
-          <input class="contacts-information" type="text" placeholder="subject">
-          <input class="contacts-your-message" type="text" placeholder="youre message *">
-          <input class="contacts-button" type="button" value="send message">
-        </section>
+        <div class="contacts">
+        <div class="contacts-area">
+          <input class="contacts-information" type="text" placeholder="YOUR NAME *" required>
+          <input class="contacts-information" type="email" placeholder="YOUR E-MAIL *" required>
+          <input class="contacts-information" type="text" placeholder="SUBJECT">
+        </div>
+        <textarea class="contacts-your-message" name="textarea" placeholder="YOUR MESSAGE *" required></textarea>
+        </div>
+        <button type="submit" class="contacts-button">send message</button>
       </form>
-      </article>
-    </footer>
+    </section>
+    </main>
   </body>
 </html>

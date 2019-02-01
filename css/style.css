@@ -1,6 +1,5 @@
 body {
     box-sizing: border-box;
-    font-size: 0;
 }
 
 *,
@@ -15,11 +14,16 @@ img {
     height: 100%;
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 .wrapper {
     width: 940px;
     margin: 0 auto;
     background-color: #fff;
-    font-size: 0;
 }
 
 @font-face {
@@ -70,10 +74,14 @@ img {
     font-size: 26px;
     line-height: 41px;
     color: #fed136;
+    text-decoration: none;
+}
+
+.menu-button {
+    display: flex;
 }
 
 .menu-item {
-    display: inline-block;
     margin: 6px 40px 0 0;
 }
 
@@ -82,6 +90,7 @@ img {
 }
 
 .menu-link {
+    display: block;
     text-decoration: none;
     font-family: "Montserrat";
     font-size: 14px;
@@ -122,6 +131,7 @@ img {
 .service {
     width: 290px;
     text-align: center;
+    margin-bottom: 120px;
 }
 
 .service::before {
@@ -159,27 +169,23 @@ img {
     padding: 0 8px;
 }
 
-.size {
-    margin-bottom: 120px;
-}
-
   /* FOOTER */
 
 .information {
     background-color: #222222;
     height: 676px;
     position: relative;
+    background-image: url(../photo/map-image.png);
+    background-repeat: no-repeat;
+    background-position: right 90%;
 }
 
-.world {
+/* .information::before {
     position: absolute;
     opacity: 0.302;
-    float: right;
-    left: 57%;
-    top: 17%;
     width: 614px;
     height: 537px;
-}
+} */
 
 .contacts-title {
     color: #fff;
@@ -206,10 +212,8 @@ img {
 }
 
 .contacts-information {
-    display: inline-block;
     font-family: "Montserrat";
     font-weight: 700;
-    text-transform: uppercase;
     padding: 5px;
     width: 456px;
     height: 52px;
@@ -224,18 +228,22 @@ img {
     display: block;
     font-family: "Montserrat";
     font-weight: 700;
-    text-transform: uppercase;
     width: 454px;
     height: 212px;
     padding: 5px;
-    /* float: right; */
     border: 0;
     border-radius: 2px;
 }
 
 .contacts-button {
-    display: block;
     font-family: "Montserrat";
     font-weight: 700;
+    margin: 0 auto;
     text-transform: uppercase;
+    padding: 24px 48px;
+    color: #fff;
+    background-color: #fed136;
+    border: 0;
+    border-radius: 3px;
+    display: block;
 }
