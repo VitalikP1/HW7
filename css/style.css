@@ -100,7 +100,8 @@ img {
     text-transform: uppercase;
 }
 
-.menu-link:hover {
+.menu-link:hover,
+.menu-link:focus {
     color: #fed136;
 }
 
@@ -247,6 +248,7 @@ img {
     border: 0;
     border-radius: 3px;
     display: block;
+    cursor: pointer;
 }
 
 .contacts {
